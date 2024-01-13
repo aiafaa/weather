@@ -1,19 +1,21 @@
-Как развернуть проект
+# Как развернуть проект
 
-Склонируйте проект командой: git clone https://github.com/aiafaa/weather.git
+1. Склонируйте проект командой: git clone https://github.com/aiafaa/weather.git
 
-Создайте виртуальное окружение: python -m venv venv
+2. Создайте виртуальное окружение: `python -m venv venv`
 
-Установите зависимости: pip install -r requirements.txt
+3. Активируйте окружение: `venv/Scripts/activate` (venv/bin/activate для Linux)
 
-Установите новый SECRET_KEY в файле core/settings.py, взять новый можно например - тут.
+4. Установите зависимости: `pip install -r requirements.txt`
 
-Создайте миграцию: python manage.py makemigrations python manage.py migrate
+5. Установите новый SECRET_KEY в файле core/settings.py, взять новый можно например - [тут](djecrety.ir).
 
-Создайте суперпользователя: python manage.py createsuperuser
+6. Создайте миграцию: `python manage.py makemigrations` `python manage.py migrate`
 
-Запустите проект командой - python manage.py runserver и перейдите в админку 127.0.0.1:8000/admin. В разделе WEATHER добавьте город, широту и долготу
+7. Создайте суперпользователя: `python manage.py createsuperuser`
 
-Перейдите по ссылке 127.0.0.1:8000/weather?city=<citi_name>
+8. Запустите проект командой - `python manage.py runserver` и перейдите в админку 127.0.0.1:8000/admin. В разделе WEATHER добавьте город, широту и долготу
+
+9. Перейдите по ссылке 127.0.0.1:8000/weather?city=<citi_name>
 
 <citi_name> - это название города на русском языке
